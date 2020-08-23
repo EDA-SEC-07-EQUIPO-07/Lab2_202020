@@ -1,5 +1,2 @@
-id;nombre;telefono;empresa
-1;Pedro Perez;123;Los Alpes
-2;Juan Pedro Rodriguez;Los Montes
-3;Juana Rangel;Las Sierras
-4;Ana Hernandez;Los Cerros
+id;actor1_name;actor1_gender;actor2_name;actor2_gender;actor3_name;actor3_gender;actor4_name;actor4_gender;actor5_name;actor5_gender;actor_number;director_name;director_gender;director_number;producer_name;producer_number;screeplay_name;editor_name
+4000;Tur;0;Susan;0;Matt;2;Eet;0;non;0;4;Aki;0;1;none;0;Aki;Raija

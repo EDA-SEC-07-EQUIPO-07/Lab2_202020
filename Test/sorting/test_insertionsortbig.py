@@ -27,11 +27,12 @@ from DataStructures import listiterator as it
 from ADT import list as lt
 import csv
 
-#list_type = 'ARRAY_LIST'
-list_type = 'SINGLE_LINKED'
+list_type = 'ARRAY_LIST'
+#list_type = 'SINGLE_LINKED'
 
 lst_books = lt.newList(list_type)
 booksfile = cf.data_dir + 'GoodReads/books.csv'
+
 
 
 def setUp():
@@ -48,7 +49,8 @@ def loadCSVFile(file, lst):
     input_file = csv.DictReader(open(file, encoding = "utf-8"))
     for row in input_file:
         lt.addLast(lst, row)
-
+    return lst_books
+    
 def printList(lst):
     iterator = it.newIterator(lst)
     while it.hasNext(iterator):
@@ -81,3 +83,6 @@ def test_loading_CSV_y_ordenamiento():
             break
         assert x > y
 
+lista=loadCSVFile(booksfile, lst_books)
+elemento=lt.getElement(lista,2)
+print (elemento["book_id"])
